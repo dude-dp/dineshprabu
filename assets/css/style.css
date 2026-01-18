@@ -6,7 +6,7 @@
 
   /*** colors ***/
 
-    --primary-bg: hsl(243, 23%, 18%);
+    --primary-bg: radial-gradient(ellipse at center, #232333 0%,#161616 100%);
     --shadow-color: hsl(254, 7%, 65%);
 
     --fanta: hsl(7, 96%, 61%);
@@ -124,7 +124,7 @@ ion-icon {
     padding-block: 15px;
     width: 100%;
     background-color: var(--primary-bg);
-    height: 50px;
+    height: 65px;
     box-shadow: var(--shadow);
     overflow: hidden;
     transition: 0.50s var(--cubic-out);
@@ -162,7 +162,7 @@ ion-icon {
 
 .navbar {
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: 0;
     width: 100%;
     padding-inline: 20px;
@@ -199,3 +199,40 @@ ion-icon {
 ::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
 ::-webkit-scrollbar-thumb { background-color: var(--primary-bg) }
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 600px screen
+ */
+
+@media (min-width: 600px) {
+    .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
+}
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+    .portfolio-card {
+        background-size: 115%;
+        padding-inline: 80px;
+    }
+
+    .portfolio-card:is(:hover, :focus) { background-size: 130%; }
+
+    .skills-list,
+    .blog-list {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+}
+
+
+
