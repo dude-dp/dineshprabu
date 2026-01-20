@@ -1,45 +1,457 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>Dinesh Prabu - Data Analyst from Chennai</title>
-		<!--- favicon --->
-		<link rel="shortcut icon" href=".assets/favicon.svg" type="image/svg+xml">
-		<!--- css link --->
-		<link rel="stylesheet" href="./assets/css/style.css">
-		<!--- google font link --->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-	</head>
-
-	<body id="body">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dinesh Prabu - Data Analyst from Chennai</title>
+        <!--- favicon --->
+        <link rel="shortcut icon" href=".assets/svg/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js" data-option="{|environment|:{|gradient|:|radial|,|sensitivity|:0.77,|colorStart|:[19,3,30,1],|colorEnd|:[11,3,17,1]},|particle|:{|life|:2,|power|:0.01,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/scorch_01.png|,|number|:1500,|colorStart|:[250,0,0,1],|colorEnd|:[49,18,101,0.5],|sizeStart|:0.33,|sizeEnd|:0.44,|direction1|:{|x|:0,|y|:100,|z|:0},|direction2|:{|x|:0,|y|:0,|z|:-1000}}}" ></script>
+		
 		<header class="header" data-header>
-			<div class="container">
-				<a href="#">
-					<h1 class="logo">Dinesh Prabu</h1>
-				</a>
-				
-				<button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-					<ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-					<ion-icon name="close-outline" class="close-icon"></ion-icon>
-				</button>
-				
-				<nav class="navbar container">
-					<ul class="navbar-list">
-						<li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
-						<li><a href="#about" class="navbar-link" data-nav-link>About</a></li>
-						<li><a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a></li>
-						<li><a href="#skills" class="navbar-link" data-nav-link>Skills</a></li>
-						<li><a href="#contact" class="navbar-link" data-nav-link>Contact</a></li>
-						<li><a href="#" class="btn btn-primary">Resume</a></li>
+
+            <div class="container header__inner">
+                <a class="brand" href="#top" aria-label="Go to top">
+                    <span class="brand__mark" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L7 7H11V14H13V7H17L12 2Z" fill="#E50914"/>
+                            <path d="M12 22L17 17H13V10H11V17H7L12 22Z" fill="#E50914"/>
+                        </svg>
+                    </span>
+                    <span class="brand__text">Dinesh Prabu</span>
+                </a>
+                
+                <nav class="nav" aria-label="Primary">
+					<button class="nav__toggle" type="button" data-nav-toggle aria-label="Open menu">
+                    	<span></span><span></span><span></span>
+                  	</button>
+
+					<ul class="nav__list" data-nav>
+						<li class="home"><a href="#home" class="nav__link" data-nav-link>Home</a></li>
+						<li class="about"><a href="#about" class="nav__link" data-nav-link>About</a></li>
+						<li class="portfolio"><a href="#portfolio" class="nav__link" data-nav-link>Portfolio</a></li>
+						<li class="experience"><a href="#experience" class="nav__link" data-nav-link>Experience</a></li>
+						<li class="toolkit"><a href="#toolkit" class="nav__link" data-nav-link>Toolkit</a></li>
+						<li class="impact"><a href="#impact" class="nav__link" data-nav-link>Impact</a></li>
 					</ul>
-				</nav>
+      			</nav>
+
+				<div class="header__cta">
+					<a class="btn btn--ghost" href="#contact">Contact</a>
+					<a class="btn btn--primary" href="assets/Dinesh-Prabu-Resume.pdf" download>View Resume</a>
+				</div>
 			</div>
 		</header>
+		
+		<main id="top">
+			
+			<!-- HERO -->
+			
+			<section class="section hero">
+				<div class="container hero__grid">
+					<div class="hero__content">
+						<div class="pill reveal">
+							<span class="dot"></span>
+							<span>Healthcare IT • Data Insights • Automation</span>
+						</div>
+						
+						<h1 class="hero__title reveal">IT Solutions Analyst with <span class="grad">Data + Automation</span> edge.</h1>
+						<p class="hero__sub reveal">
+							I’m <strong>Dinesh Prabu</strong> — 5+ years at athenahealth delivering product support excellence, SQL-driven analysis, dashboards/alerts, and automation that reduces effort and improves data quality.
+						</p>
+						
+						<div class="hero__actions reveal">
+							<a class="btn btn--primary" href="#experience">View Experience</a>
+							<a class="btn btn--ghost" href="#resume">View Resume</a>
+						</div>
 
-		<script src="./assets/js/script.js"></script>
-	</body>
+          <div class="hero__meta reveal">
+            <div class="meta">
+              <span class="meta__k">Location</span>
+              <span class="meta__v">Chennai, Tamil Nadu, India</span>
+            </div>
+            <div class="meta">
+              <span class="meta__k">Email</span>
+              <a class="meta__v link" href="mailto:Dineshprabu.v@outlook.com">Dineshprabu.v@outlook.com</a>
+            </div>
+            <div class="meta">
+              <span class="meta__k">Phone</span>
+              <a class="meta__v link" href="tel:+918248433272">+91 82484 33272</a>
+            </div>
+            <div class="meta">
+              <span class="meta__k">LinkedIn</span>
+              <a class="meta__v link" href="https://linkedin.com/in/dineshprabuv" target="_blank" rel="noreferrer">
+                linkedin.com/in/dineshprabuv
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__card reveal">
+          <div class="card">
+            <div class="card__top">
+              <div class="avatar" aria-hidden="true">DP</div>
+              <div>
+                <div class="card__name">Dinesh Prabu</div>
+                <div class="card__role">Healthcare IT • Data Analyst • Automation</div>
+              </div>
+            </div>
+
+            <div class="card__stats">
+              <div class="stat">
+                <div class="stat__v">5+</div>
+                <div class="stat__k">Years (athenahealth)</div>
+              </div>
+              <div class="stat">
+                <div class="stat__v">40%</div>
+                <div class="stat__k">LOE reduced via automation</div>
+              </div>
+              <div class="stat">
+                <div class="stat__v">10+ hrs</div>
+                <div class="stat__k">Saved weekly (FTE)</div>
+              </div>
+            </div>
+
+            <div class="card__chips">
+              <span class="chip">SQL (Advanced)</span>
+              <span class="chip">Power BI (DAX)</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Grafana</span>
+              <span class="chip">Python / Perl</span>
+              <span class="chip">Jira / Salesforce</span>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--primary btn--small" href="#contact">Contact</a>
+              <a class="btn btn--ghost btn--small" href="assets/Dinesh-Prabu-Resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+            </div>
+          </div>
+          <div class="card__decor" aria-hidden="true">
+            <svg width="100%" height="100%" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg">
+              <circle cx="100" cy="100" r="90" stroke="#E50914" stroke-width="2" stroke-opacity="0.2" />
+              <circle cx="100" cy="100" r="60" stroke="#E50914" stroke-width="1" stroke-opacity="0.1" />
+              <path d="M100 40 L120 80 L80 80 Z" fill="#E50914" fill-opacity="0.15" class="svg-pulse" />
+              <path d="M100 160 L80 120 L120 120 Z" fill="#E50914" fill-opacity="0.15" class="svg-pulse" style="animation-delay: 0.5s;" />
+            </svg>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">About</h2>
+          <p class="muted">
+            I bridge product support + analytics + automation to improve outcomes across healthcare workflows.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="tile reveal">
+            <div class="tile__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3V21M3 12H21" stroke="#E50914" stroke-width="2" stroke-linecap="round" class="svg-draw" />
+              </svg>
+            </div>
+            <h3>What I’m strong at</h3>
+            <ul class="bullets">
+              <li>Investigating data quality issues using intermediate–advanced SQL</li>
+              <li>Turning operational trends into dashboards (Power BI / Tableau) and alerts (Grafana)</li>
+              <li>Automating repeatable work with Python, RPA, and Power Automate</li>
+              <li>Clear stakeholder communication (SOPs, presentations, project updates)</li>
+            </ul>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M8 21H16C17.1046 21 18 20.1046 18 19V5C18 3.89543 17.1046 3 16 3H8C6.89543 3 6 3.89543 6 5V19C6 20.1046 6.89543 21 8 21Z" stroke="#E50914" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-draw" />
+              </svg>
+            </div>
+            <h3>What I’m looking for</h3>
+            <p class="muted" style="margin-top:10px">
+              Roles focused on <strong>Data Analyst / Business Analyst (Data)</strong> or <strong>Healthcare IT Analytics</strong>,
+              where I can own data investigations, reporting, quality monitoring, and automation to reduce operational effort.
+            </p>
+            <div class="chips" style="margin-top:12px">
+              <span class="chip">Data Quality</span>
+              <span class="chip">Operational Analytics</span>
+              <span class="chip">Process Optimization</span>
+              <span class="chip">Automation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="section" id="impact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Impact highlights</h2>
+          <p class="muted">Numbers recruiters scan for first.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="tile reveal">
+            <h3>Escalations ↓ 20%</h3>
+            <p class="muted">Resolved complex issues with deep process expertise and crisp triage.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Efficiency ↑ 25–50%</h3>
+            <p class="muted">Built internal tools (Perl/Python/HTML/CSS/JS) to streamline workflows.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>LOE ↓ 40%</h3>
+            <p class="muted">Automation via RPA, Power Automate, and Python; saved 10+ FTE hours weekly.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Resolution time ↓ 30%</h3>
+            <p class="muted">Provided actionable guidance and operational clarity across teams.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>On-time resolution 98%</h3>
+            <p class="muted">Consistent SLA/SLC adherence with improved client satisfaction.</p>
+          </article>
+          <article class="tile reveal">
+            <h3>Downtime ↓ 40%</h3>
+            <p class="muted">RCA + cross-functional collaboration for critical incidents.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Experience</h2>
+          <p class="muted">Athenahealth • Sitel Group</p>
+        </div>
+
+        <div class="timeline">
+          <article class="role reveal">
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Product Support Associate</h3>
+                <div class="role__meta">athenahealth • Nov 2024 — Present</div>
+              </div>
+              <div class="role__tag">SQL • Automation • Monitoring</div>
+            </div>
+            <ul class="bullets">
+              <li>Reduced escalation rates by <strong>20%</strong> by resolving complex support issues.</li>
+              <li>Executed intermediate–advanced <strong>SQL</strong> to analyze large datasets, investigate data quality issues, and support internal reporting.</li>
+              <li>Built internal tools (Perl, Python, HTML/CSS/JS) improving workflow efficiency by <strong>25–50%</strong>.</li>
+              <li>Built dashboards/alerts using <strong>Grafana</strong> to detect anomalies and recurring quality issues.</li>
+              <li>Implemented automation (RPA, Power Automate, Python) reducing LOE by <strong>40%</strong> and saving <strong>10+ hours/week</strong>.</li>
+              <li>Managed delivery in <strong>Jira Cloud</strong>; authored SOPs to standardize processes and mitigate risk.</li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Senior Product Support Analyst</h3>
+                <div class="role__meta">athenahealth • Nov 2022 — Nov 2024</div>
+              </div>
+              <div class="role__tag">Power BI • Salesforce • OpenSearch</div>
+            </div>
+            <ul class="bullets">
+              <li>Ensured <strong>100% compliance</strong> with EHR processes, improving patient data accuracy and operational quality.</li>
+              <li>Implemented process improvements increasing operational efficiency by <strong>20%+</strong>.</li>
+              <li>Reduced issue resolution time by <strong>30%</strong> through guidance and deep domain expertise.</li>
+              <li>Delivered operational insights using <strong>Power BI</strong>; monitored integrations and resolved failures using <strong>OpenSearch</strong>.</li>
+              <li>Streamlined <strong>Salesforce</strong> case management and dashboards improving resolution efficiency by <strong>30%</strong>.</li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Product Support Analyst</h3>
+                <div class="role__meta">athenahealth • Apr 2021 — Nov 2022</div>
+              </div>
+              <div class="role__tag">SLA • RCA • Process Improvement</div>
+            </div>
+            <ul class="bullets">
+              <li>Achieved <strong>98%</strong> on-time resolution and improved client satisfaction by <strong>15%+</strong>.</li>
+              <li>Reduced operational bottlenecks by <strong>25%</strong> by identifying workflow inconsistencies.</li>
+              <li>Minimized downtime by <strong>40%</strong> via systematic triage, RCA, and cross-functional collaboration.</li>
+              <li>Maintained <strong>95%</strong> adherence to SLA commitments during critical incidents.</li>
+            </ul>
+          </article>
+
+          <article class="role reveal">
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Technical Support Executive</h3>
+                <div class="role__meta">Sitel Group • Oct 2019 — Mar 2021</div>
+              </div>
+              <div class="role__tag">Troubleshooting • Linux Automation</div>
+            </div>
+            <ul class="bullets">
+              <li>Achieved <strong>95%</strong> first-call resolution for complex technical issues.</li>
+              <li>Ensured <strong>99% uptime</strong> coverage during rotational shifts.</li>
+              <li>Automated routine tasks on Ubuntu/Linux using <strong>Bash/Shell</strong>, improving efficiency by <strong>25%+</strong>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Skills</h2>
+          <p class="muted">Grouped for quick scanning.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="tile reveal">
+            <h3>Data & Analytics</h3>
+            <div class="chips">
+              <span class="chip">SQL (Advanced)</span>
+              <span class="chip">Data Quality</span>
+              <span class="chip">Dataset Profiling</span>
+              <span class="chip">Exception Analysis</span>
+              <span class="chip">Power BI (DAX)</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Excel (PowerQuery, VBA)</span>
+              <span class="chip">Dashboards & Alerts</span>
+            </div>
+          </div>
+
+          <div class="tile reveal">
+            <h3>Automation & Engineering</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">Perl</span>
+              <span class="chip">Power Automate</span>
+              <span class="chip">RPA Framework</span>
+              <span class="chip">Shell / Bash</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">JSON / XML</span>
+            </div>
+          </div>
+
+          <div class="tile reveal">
+            <h3>Platforms & Tools</h3>
+            <div class="chips">
+              <span class="chip">Grafana</span>
+              <span class="chip">Kibana</span>
+              <span class="chip">Splunk</span>
+              <span class="chip">OpenSearch</span>
+              <span class="chip">Elasticsearch</span>
+              <span class="chip">SOQL</span>
+              <span class="chip">Salesforce</span>
+              <span class="chip">Jira</span>
+              <span class="chip">Confluence</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile reveal" style="margin-top:14px">
+          <h3>Core strengths</h3>
+          <div class="chips">
+            <span class="chip">Root Cause Analysis</span>
+            <span class="chip">Business Process Mapping</span>
+            <span class="chip">Process Standardization</span>
+            <span class="chip">Stakeholder Collaboration</span>
+            <span class="chip">Incident Management</span>
+            <span class="chip">SOP Documentation</span>
+            <span class="chip">Reporting & Presentations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Certifications</h2>
+          <p class="muted">From your resume.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="tile reveal"><h3>SQL (Advanced)</h3><p class="muted">Querying, analysis, investigation.</p></div>
+          <div class="tile reveal"><h3>Lean Six Sigma (White Belt)</h3><p class="muted">Process improvement mindset.</p></div>
+          <div class="tile reveal"><h3>Project Management</h3><p class="muted">Delivery, prioritization, communication.</p></div>
+          <div class="tile reveal"><h3>JQL in Jira Software</h3><p class="muted">Triage, tracking, reporting.</p></div>
+          <div class="tile reveal"><h3>Data Wrangling (Excel + MQuery)</h3><p class="muted">Cleaning and shaping data.</p></div>
+          <div class="tile reveal"><h3>Process Discovery for RPA</h3><p class="muted">Automation identification and design.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Resume</h2>
+          <p class="muted">Preview + PDF options.</p>
+        </div>
+
+        <div class="resume reveal">
+          <div class="resume__actions">
+            <a class="btn btn--primary" href="assets/Dinesh-Prabu-Resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+            <a class="btn btn--ghost" href="assets/Dinesh-Prabu-Resume.pdf" download>Download</a>
+          </div>
+
+          <div class="resume__frame" role="region" aria-label="Resume PDF preview">
+            <object data="assets/Dinesh-Prabu-Resume.pdf" type="application/pdf">
+              <p class="muted">
+                PDF preview not supported.
+                <a class="link" href="assets/Dinesh-Prabu-Resume.pdf" target="_blank" rel="noreferrer">Open the resume</a>.
+              </p>
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__copy">
+            <h2 class="h2">Contact</h2>
+            <p class="muted">
+              Recruiters: share role details + tech stack + location. Clients: share scope + timeline + success metrics.
+            </p>
+          </div>
+
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="mailto:Dineshprabu.v@outlook.com?subject=Opportunity%20for%20Dinesh%20Prabu">
+              Email
+            </a>
+            <a class="btn btn--ghost" href="https://linkedin.com/in/dineshprabuv" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn--ghost" href="tel:+918248433272">Call</a>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <span class="muted">© <span id="year"></span> Dinesh Prabu.</span>
+          <a class="link to-top" href="#top">Back to top</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+	
+  	<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
 </html>
